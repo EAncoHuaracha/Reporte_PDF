@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reporte</title>
+</head>
+
+<body>
+    <h1 class="text-center">Reporte</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nro</th>
+                <th>Parasito</th>
+                <th>Departamento</th>
+                <th>Prevalencia</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for expense in p %}
+            <tr>
+                <td>{{expense.id}}</td>
+                <td>{{expense.nombre}}</td>
+                <td>{{expense.departamento}}</td>
+                <td>{{expense.prevalencia}}</td>
+
+            </tr>
+            {% endfor %}
+    </table>
+</body>
+
+</html>
